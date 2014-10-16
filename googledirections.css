@@ -1,0 +1,12 @@
+body {
+background: #D3E3D0;
+font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+.centre {
+margin-left: auto;
+margin-right: auto;
+width: 70%;
+margin-top:0px;
+margin-bottom:20px;
+}
