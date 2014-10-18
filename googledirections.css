@@ -3,9 +3,14 @@ background: #D3E3D0;
 font-family: 'Yanone Kaffeesatz', sans-serif;
 }
 
+p {
+font-size: 14px;
+}
+
 .centre {
 margin-left: auto;
 margin-right: auto;
+font-size: 22px;
 width: 70%;
 margin-top:0px;
 margin-bottom:20px;
