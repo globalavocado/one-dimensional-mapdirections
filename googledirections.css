@@ -1,17 +1,34 @@
-body {
-background: #D3E3D0;
+body, .adp-text, .adp-summary, .adp-substep, .adp-legal {
 font-family: 'Yanone Kaffeesatz', sans-serif;
 }
 
+body{
+	background: #D3E3D0;
+}
+
+body input {
+	width:150px; 
+	height:15px;
+}
+
 p {
-font-size: 14px;
+font-size: 24px;
 }
 
 .centre {
 margin-left: auto;
 margin-right: auto;
-font-size: 22px;
+font-size: 28px;
 width: 70%;
 margin-top:0px;
 margin-bottom:20px;
 }
+
+.adp-warnbox{
+	display:none
+}
+
+.adp-placemark img{
+	display:none;
+}
+
