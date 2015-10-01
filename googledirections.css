@@ -32,3 +32,7 @@ margin-bottom:20px;
 	display:none;
 }
 
+@media print {
+    .onlyscreen {
+    display: none;
+  }
