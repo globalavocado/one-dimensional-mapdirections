@@ -11,18 +11,18 @@ body input {
 	height:15px;
 }
 
-p {
+/*p {
 font-size: 24px;
-}
+}*/
 
-.centre {
+/*.centre {
 margin-left: auto;
 margin-right: auto;
 font-size: 28px;
 width: 70%;
 margin-top:0px;
 margin-bottom:20px;
-}
+}*/
 
 .adp-warnbox{
 	display:none
