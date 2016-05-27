@@ -1,5 +1,9 @@
 body, .adp-text, .adp-summary, .adp-substep, .adp-legal {
-font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+.adp-text, .adp-summary, .adp-substep {
+  font-size: larger;
 }
 
 body{
@@ -11,18 +15,26 @@ body input {
 	height:15px;
 }
 
-/*p {
-font-size: 24px;
-}*/
+p {
+  font-size: 24px;
+  margin: 5px 0px;
+}
 
-/*.centre {
-margin-left: auto;
-margin-right: auto;
-font-size: 28px;
-width: 70%;
-margin-top:0px;
-margin-bottom:20px;
-}*/
+.button {
+  padding: 0.5rem;
+}
+
+#map_canvas {
+  height: 400px;
+}
+
+#routeEnd {
+  font-size: medium;
+  } 
+
+#routeForm {
+  font-size: medium;
+}
 
 .adp-warnbox{
 	display:none

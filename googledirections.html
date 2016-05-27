@@ -1,51 +1,47 @@
 <!doctype html>
 <html lang='en'>
 
-	<head>
-		<title>my walking directions</title>
-		
-		<link href='http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:400,700,300' rel='stylesheet' type='text/css'>   
-		 <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flat-ui/2.2.2/css/flat-ui.min.css" /> -->
-		 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.2/css/foundation.css" />
+  <head>
+    <title>my walking directions</title>
+    
+    <link href='http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:400,700,300' rel='stylesheet' type='text/css'>   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.2/css/foundation.css" />
+    <link rel='stylesheet' href='./css/googledirections.css' />
 
-		<link rel='stylesheet' href='./css/googledirections.css' />
-		
-		<!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script> -->
-		<script type="text/javascript" src="http://maps.google.com/maps/api/js?"></script>
+    <script type="text/javascript" src="http://maps.google.com/maps/api/js?"></script>
+    <script src="./js/googledirections.js"></script>
+    <script src="./js/print.js"></script>
+  </head>
 
-		<script src="./js/googledirections.js"></script>
+  <body onload="initialize()">
 
-		<script src="./js/print.js"></script>
-	</head>
+      <div class="container">
+        <div class="row">
 
-	<body onload="initialize()">
+          <div class="large-1 columns">
+          </div>
+            <div class="large-11 columns">
+        
+            <h1>my walking directions</h1>
 
-			<div class="container">
+            <div id="map_canvas"></div> 
 
-				<div class="row">
+              <p>your directions from Makers Academy:</p>
 
-					<div class="small-6 large-4 columns">
-			
-					<h1>my walking directions</h1>
+              <form action="/directions" onsubmit="calcRoute();return false;" id="routeForm">
+                <input type="text" id="routeEnd" placeholder="destination">
+                <button class="button success">calculate route</button>
+              </form>
 
-					<div id="map_canvas" style="width:400px; height:400px"></div> 
+              <button class="button success" onclick="printContent('onlydirections');">print route</button>
+         
+              <div id="directionsPanel" class="onlydirections"></div>
 
-			  		<span>your directions from Makers Academy:</span>
+            </div>
 
-					  <form action="/directions" onsubmit="calcRoute();return false;" id="routeForm">
-					    <input type="text" id="routeEnd" value="" placeholder="destination">
-					    <input class="button success" type="submit" value="calculate route">
-					  </form>
-
-					  <input class="button success" type="submit" value="print route" onclick="printContent('onlydirections');">
-			 
-					  <div id="directionsPanel" class="onlydirections"></div>
-
-					</div>
-
-				</div>
-			</div>
-	
-	</body>
+        </div>
+      </div>
+  
+  </body>
 
 </html>
