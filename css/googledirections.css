@@ -1,50 +1,99 @@
-body, .adp-text, .adp-summary, .adp-substep, .adp-legal {
-  font-family: 'Yanone Kaffeesatz', sans-serif;
-}
+/* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
 
-.adp-text, .adp-summary, .adp-substep {
-  font-size: larger;
-}
+    body, .adp-text, .adp-summary, .adp-substep, .adp-legal {
+      font-family: 'Yanone Kaffeesatz', sans-serif;
+    }
+       .adp-text, .adp-summary, .adp-substep {
+      font-size: larger;
+    }
 
-body{
-	background: #D3E3D0;
-}
+    body {
+      background: #D3E3D0;
+    }
 
-body input {
-	width:150px; 
-	height:15px;
-}
+    body input {
+      width:150px; 
+      height:15px;
+    }
 
-p {
-  font-size: 24px;
-  margin: 5px 0px;
-}
+    p {
+      font-size: 24px;
+      margin: 5px 0px;
+    }
 
-.button {
-  padding: 0.5rem;
-}
+    .button {
+      padding: 0.5rem;
+    }
 
-#map_canvas {
-  height: 400px;
-}
+    #map_canvas {
+      height: 400px;
+    }
+    
+    /* Optional: Makes the sample page fill the window. */
+    /* html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+    */
+    
+    #querypanel {
+      padding-top:20px;
+      position:relative;
+      text-align: center;
+      line-height: 30px;
+    }
 
-#routeEnd {
-  font-size: medium;
-  } 
+    #directionspanel {
+      line-height: 30px;
+      padding-left: 10px;
+    }
 
-#routeForm {
-  font-size: medium;
-}
+    #directionspanel select, #directionspanel input {
+      font-size: 15px;
+    }
 
-.adp-warnbox{
-	display:none
-}
+    #directionspanel select {
+      width: 100%;
+    }
 
-.adp-placemark img{
-	display:none;
-}
+    #directionspanel i {
+      font-size: 12px;
+    }
+    #directionspanel {
+      width: 100%;
+      overflow: auto;
+    }
 
-@media print {
-    .onlyscreen {
-    display: none;
-  }
+      #routeEnd {
+    font-size: medium;
+    } 
+
+    #routeForm {
+      font-size: medium;
+    }
+
+    .adp-warnbox{
+      display:none
+    }
+
+    .adp-placemark img{
+      display:none;
+    }
+
+    @media print {
+      .onlyscreen {
+        display: none;
+      }
+
+      #map_canvas {
+        height: 500px;
+        margin: 0;
+      }
+
+      #directionspanel {
+        float: none;
+        width: auto;
+      }
+    }
